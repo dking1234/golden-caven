@@ -1,0 +1,39 @@
+.dev-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+.dev-partition {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.dev-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dev-title {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: start;
+    color: #fff;
+    width: 90%;
+}
+
+.dev-paragraphy {
+    font-size: var(--font-size-medium);
+    color: #fff;
+    text-align: start;
+    width: 80%;
+}
+
+.dev-img {
+    width: 500px;
+}

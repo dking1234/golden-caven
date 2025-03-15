@@ -1,0 +1,30 @@
+.trust-container {
+    display: flex;
+    background-color: #F5F5F5;
+    padding: 90px 80px
+}
+
+.trust-partition {
+    display: flex;
+    gap: var(--spacing-large)
+}
+
+.trust-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.trust-title {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: start;
+    width: 60%;
+}
+
+.trust-paragraphy {
+    font-size: var(--font-size-large);
+    color: gray;
+    text-align: start;
+    width: 80%;
+}

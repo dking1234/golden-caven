@@ -1,0 +1,23 @@
+.header-container {
+    display: flex;
+    background-color: var(--background-color);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    height: 4rem;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header-sections {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-large);
+  width: 100%;
+}
+
+.header-buttons {
+  display: flex;
+  gap: var(--spacing-small);
+}

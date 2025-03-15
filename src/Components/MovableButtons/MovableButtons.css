@@ -1,0 +1,16 @@
+.move-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-small)
+}
+
+.move-left, .move-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-medium);
+    background-color: lightgray;
+    border-radius: 50px;
+    cursor: pointer;
+}

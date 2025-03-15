@@ -1,0 +1,25 @@
+.partiners-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px;
+    margin-left: 60px;
+}
+
+.partiner-title {
+    font-size: var(--font-size-large);
+    color: gray;
+    text-align: start;
+    width: 25%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.partiners-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 50px;
+}

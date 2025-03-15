@@ -1,0 +1,50 @@
+.about-team {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-team-partition {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.about-team-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 5rem;
+}
+
+.about-team-title {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: start;
+    width: 80%;
+}
+
+.about-team-sub-title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: start;
+    width: 80%;
+    margin-top: 1rem;
+}
+
+.about-team-paragraphy {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+    width: 90%;
+    color: gray;
+}
+
+.about-team-img {
+    width: 30rem;
+}

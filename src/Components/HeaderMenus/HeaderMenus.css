@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #FFFFFF;
+    --background-color: #121212;
+    --shadow: 0 10px 10px rgba(0, 0, 0, 0.02);
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 30px;
+    --font-size-small: 12px;
+    --font-size-medium: 14px;
+    --font-size-large: 18px;
+  }
+
+.header-menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu-list {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-medium)
+}
+
+.header-menu-text {
+    font-size: var(--font-size-medium);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.header-menu-text:hover {
+    color: #cecece;
+}

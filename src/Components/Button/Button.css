@@ -1,0 +1,14 @@
+.button-container {
+    background-color: #000;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    padding: var(--spacing-small) 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+}
+
+.button-container:hover {
+    background-color: #121212;
+}

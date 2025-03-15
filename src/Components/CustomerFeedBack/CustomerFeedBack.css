@@ -1,0 +1,45 @@
+.customer-feedback-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    overflow: hidden; /* Prevent container from scrolling */
+  }
+  
+  .customer-feedback-upper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  
+  .customer-feedback-title {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: start;
+    width: 30%;
+  }
+  
+  .customer-feedback-testimonials {
+    display: flex;
+    gap: var(--spacing-medium);
+    margin-bottom: 2rem;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    width: 100%; /* Adjust width to fit the container */
+    padding-bottom: 1rem; /* Add space for scrollbar */
+  }
+  
+  /* Hide scrollbar for a cleaner look */
+  .customer-feedback-testimonials::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Optional: Add hover effect for testimonials */
+  .customer-feedback-testimonials > * {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+  }

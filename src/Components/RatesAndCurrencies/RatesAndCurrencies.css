@@ -1,0 +1,87 @@
+/* RatesAndCurrencies.css */
+.rates-and-currencies {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .rates-and-currencies h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .rate-currencies-container{
+    padding: 40px;
+  }
+
+  .currency-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between grid items */
+  }
+  
+  .currency-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .currency-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .flag {
+    width: 60px;
+    height: 40px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .currency-details {
+    text-align: center;
+  }
+  
+  .country-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .currency-name {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .currency-rate {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1890ff;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 1024px) {
+    .currency-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .currency-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .currency-grid {
+      grid-template-columns: 1fr; /* 1 column for small mobile */
+    }
+  }
