@@ -11,7 +11,7 @@ function About() {
     <div className='about-container'>
         <Header />
         <div className='about-banner'>
-            <span className='about-title'>Connecting People Through Fast & Secure Payments</span>
+        <span className='about-title'>Connecting People Through Fast & Secure Payments</span>
         </div>
         <AboutInfo />
         <AboutTeam />

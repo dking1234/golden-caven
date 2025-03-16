@@ -8,7 +8,16 @@
 .services-display-partition {
     display: flex;
     justify-content: space-between;
-    width: 88%;
+    align-items: flex-start;
+    width: 80%;
+    gap: var(--spacing-large); /* Add gap between left and right partitions */
+}
+
+.left-partition,
+.right-partition {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-large); /* Add gap between service displays */
 }
 
 .service-display {
@@ -19,37 +28,101 @@
 }
 
 .service-display-title {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 600;
     text-align: start;
-    width: 80%; 
+    width: 80%;
     margin-bottom: 10px;
 }
 
 .service-display-paragraphy {
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-medium);
     color: gray;
     text-align: start;
     width: 80%;
     margin-bottom: 40px;
+    line-height: 1.6; /* Improve readability */
 }
 
-.service-image-size {
-    width: 600px;
+.service-image-size,
+.service-image-size-1,
+.service-image-size-2,
+.service-image-size-3 {
+    width: 100%; /* Make images responsive */
+    max-width: 500px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
     margin-bottom: 30px;
 }
 
 .service-image-size-1 {
-    width: 500px;
-    margin-bottom: 30px;
+    max-width: 400px; /* Adjust for specific image */
 }
 
 .service-image-size-2 {
-    width: 600px;
-    margin-bottom: 60px;
+    max-width: 500px; /* Adjust for specific image */
 }
 
 .service-image-size-3 {
-    width: 500px;
-    margin-bottom: 30px;
+    max-width: 400px; /* Adjust for specific image */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .services-display-partition {
+        width: 90%; /* Increase width for smaller screens */
+    }
+
+    .service-display-title {
+        width: 90%; /* Adjust title width */
+    }
+
+    .service-display-paragraphy {
+        width: 90%; /* Adjust paragraph width */
+    }
+}
+
+@media (max-width: 768px) {
+    .services-display-partition {
+        flex-direction: column; /* Stack left and right partitions vertically */
+        align-items: center; /* Center items */
+        gap: var(--spacing-medium); /* Reduce gap */
+    }
+
+    .left-partition,
+    .right-partition {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .service-display-title {
+        font-size: 20px; /* Reduce font size */
+    }
+
+    .service-display-paragraphy {
+        font-size: var(--font-size-small); /* Reduce font size */
+    }
+
+    .service-image-size,
+    .service-image-size-1,
+    .service-image-size-2,
+    .service-image-size-3 {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .services-display-continer {
+        margin-top: 3rem; /* Reduce margin for mobile */
+    }
+
+    .services-display-partition {
+        width: 95%; /* Increase width for mobile */
+    }
+
+    .service-display-title {
+        font-size: 18px; /* Further reduce font size */
+    }
+
+    .service-display-paragraphy {
+        font-size: var(--font-size-xsmall); /* Further reduce font size */
+    }
 }

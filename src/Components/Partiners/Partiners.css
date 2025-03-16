@@ -23,3 +23,42 @@
     width: 100%;
     margin-bottom: 50px;
 }
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .partiner-title {
+        width: 40%; /* Adjust title width for smaller screens */
+    }
+
+    .partiners-logo img {
+        width: 120px; /* Reduce logo size */
+        margin: 0 20px; /* Reduce spacing */
+    }
+}
+
+@media (max-width: 768px) {
+    .partiners-container {
+        margin: 0;
+    } 
+    .partiner-title {
+        width: 60%; /* Adjust title width for tablets */
+        margin: 20px;
+    }
+
+    .partiners-logo img {
+        width: 60px; /* Further reduce logo size */
+        margin: 0 15px; /* Further reduce spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .partiner-title {
+        width: 80%; /* Adjust title width for mobile */
+        font-size: var(--font-size-medium); /* Reduce font size */
+    }
+
+    .partiners-logo img {
+        width: 80px; /* Reduce logo size for mobile */
+        margin: 0 10px; /* Reduce spacing for mobile */
+    }
+}

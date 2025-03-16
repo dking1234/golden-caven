@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: space-between;
     width: 90%;
+    gap: var(--spacing-large); /* Add gap between text and image */
 }
 
 .dev-info {
@@ -25,6 +26,7 @@
     text-align: start;
     color: #fff;
     width: 90%;
+    margin-bottom: 20px; /* Add spacing */
 }
 
 .dev-paragraphy {
@@ -32,8 +34,78 @@
     color: #fff;
     text-align: start;
     width: 80%;
+    line-height: 1.6; /* Improve readability */
 }
 
 .dev-img {
     width: 500px;
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .dev-partition {
+        width: 95%; /* Increase width for smaller screens */
+    }
+
+    .dev-title {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .dev-paragraphy {
+        width: 90%; /* Adjust paragraph width */
+    }
+
+    .dev-img {
+        width: 400px; /* Reduce image size */
+    }
+}
+
+@media (max-width: 768px) {
+    .dev-partition {
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: center; /* Center items */
+        gap: var(--spacing-medium); /* Reduce gap */
+    }
+
+    .dev-info {
+        align-items: center; /* Center text for smaller screens */
+        text-align: center; /* Center-align text */
+    }
+
+    .dev-title {
+        font-size: 28px; /* Reduce font size */
+        text-align: center; /* Center-align title */
+        margin-top: 5rem;
+    }
+
+    .dev-paragraphy {
+        font-size: var(--font-size-small); /* Reduce font size */
+        text-align: center; /* Center-align paragraph */
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .dev-img {
+        width: 100%; /* Full width for smaller screens */
+        max-width: 700px; /* Limit maximum width */
+    }
+}
+
+@media (max-width: 480px) {
+    .dev-container {
+        padding: 20px 10px; /* Reduce padding for mobile */
+    }
+
+    .dev-title {
+        font-size: 24px; /* Further reduce font size */
+    }
+
+    .dev-paragraphy {
+        font-size: var(--font-size-xsmall); /* Further reduce font size */
+    }
+
+    .dev-img {
+        max-width: 300px; /* Further reduce image size */
+    }
 }

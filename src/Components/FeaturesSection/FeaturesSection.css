@@ -4,24 +4,103 @@
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
+    padding: 2rem; /* Add padding for better spacing */
 }
 
 .features-grid {
     display: flex;
     flex-direction: column;
-
+    gap: var(--spacing-medium); /* Add gap between rows */
 }
 
 .features-row {
     display: flex;
-    gap: var(--spacing-medium);
+    gap: var(--spacing-medium); /* Add gap between cards */
+    justify-content: center; /* Center cards horizontally */
 }
 
 .feature-card {
     background-color: #fff;
     border-radius: 10px;
-    margin-top: 2rem;
     padding: 30px;
-    max-width: 200px;
+    max-width: 200px; /* Limit maximum width */
+    width: 100%; /* Ensure cards take full width on smaller screens */
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    text-align: center; /* Center-align text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effect */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Enhance shadow on hover */
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px; /* Add spacing */
+    color: #333; /* Darken text color */
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: gray;
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .features-row {
+        gap: var(--spacing-small); /* Reduce gap between cards */
+    }
+
+    .feature-card {
+        padding: 20px; /* Reduce padding */
+    }
+
+    .feature-card h3 {
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .feature-card p {
+        font-size: 13px; /* Reduce font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .features-row {
+        flex-direction: column; /* Stack cards vertically */
+        gap: var(--spacing-small); /* Reduce gap between cards */
+    }
+
+    .feature-card {
+        max-width: 100%; /* Full width for smaller screens */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .feature-card h3 {
+        font-size: 18px; /* Reset font size for better readability */
+    }
+
+    .feature-card p {
+        font-size: 14px; /* Reset font size for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .features-section {
+        padding: 1rem; /* Reduce padding for mobile */
+    }
+
+    .feature-card {
+        padding: 15px; /* Further reduce padding */
+    }
+
+    .feature-card h3 {
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .feature-card p {
+        font-size: 13px; /* Reduce font size */
+    }
 }

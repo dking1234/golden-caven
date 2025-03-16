@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     width: 90%;
+    gap: var(--spacing-large); /* Add gap between image and text */
 }
 
 .about-team-text {
@@ -19,7 +20,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-left: 5rem;
+    margin-left: 5rem; /* Add spacing between image and text */
 }
 
 .about-team-title {
@@ -27,6 +28,7 @@
     font-weight: 600;
     text-align: start;
     width: 80%;
+    margin-bottom: 20px; /* Add spacing */
 }
 
 .about-team-sub-title {
@@ -34,7 +36,7 @@
     font-weight: 500;
     text-align: start;
     width: 80%;
-    margin-top: 1rem;
+    margin-top: 1rem; /* Add spacing */
 }
 
 .about-team-paragraphy {
@@ -43,8 +45,92 @@
     text-align: start;
     width: 90%;
     color: gray;
+    line-height: 1.6; /* Improve readability */
 }
 
 .about-team-img {
     width: 30rem;
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .about-team-partition {
+        width: 95%; /* Increase width for smaller screens */
+    }
+
+    .about-team-title {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .about-team-sub-title {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .about-team-paragraphy {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+
+    .about-team-img {
+        width: 25rem; /* Reduce image size */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-team-partition {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center items */
+        gap: var(--spacing-medium); /* Reduce gap */
+    }
+
+    .about-team-text {
+        margin-left: 0; /* Remove left margin */
+        align-items: center; /* Center items */
+        text-align: center; /* Center-align text */
+    }
+
+    .about-team-title {
+        width: 100%; /* Full width for smaller screens */
+        text-align: center; /* Center-align title */
+    }
+
+    .about-team-sub-title {
+        width: 100%; /* Full width for smaller screens */
+        text-align: center; /* Center-align sub-title */
+    }
+
+    .about-team-paragraphy {
+        width: 100%; /* Full width for smaller screens */
+        text-align: center; /* Center-align paragraph */
+    }
+
+    .about-team-img {
+        width: 100%; /* Full width for smaller screens */
+        max-width: 25rem; /* Limit maximum width */
+        margin-top: 2rem; /* Add spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-team {
+        margin-top: 3rem; /* Reduce margin for mobile */
+        margin-bottom: 3rem; /* Reduce margin for mobile */
+    }
+
+    .about-team-title {
+        font-size: 24px; /* Reduce font size */
+    }
+
+    .about-team-sub-title {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .about-team-paragraphy {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .about-team-img {
+        max-width: 20rem; /* Further reduce image size */
+    }
 }

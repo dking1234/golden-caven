@@ -1,12 +1,13 @@
 .trust-container {
     display: flex;
     background-color: #F5F5F5;
-    padding: 90px 80px
+    padding: 90px 80px;
 }
 
 .trust-partition {
     display: flex;
-    gap: var(--spacing-large)
+    gap: var(--spacing-large);
+    align-items: center; /* Center items vertically */
 }
 
 .trust-info {
@@ -20,6 +21,7 @@
     font-weight: 600;
     text-align: start;
     width: 60%;
+    margin-bottom: 20px; /* Add spacing */
 }
 
 .trust-paragraphy {
@@ -27,4 +29,75 @@
     color: gray;
     text-align: start;
     width: 80%;
+    line-height: 1.6; /* Improve readability */
+}
+
+.trust-img {
+    width: 30rem;
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .trust-container {
+        padding: 70px 60px; /* Reduce padding */
+    }
+
+    .trust-title {
+        width: 70%; /* Adjust title width */
+    }
+
+    .trust-paragraphy {
+        width: 90%; /* Adjust paragraph width */
+    }
+
+    .trust-img {
+        width: 25rem; /* Reduce image size */
+    }
+}
+
+@media (max-width: 768px) {
+    .trust-container {
+        padding: 50px 40px; /* Further reduce padding */
+    }
+
+    .trust-partition {
+        flex-direction: column; /* Stack items vertically */
+        gap: var(--spacing-medium); /* Reduce gap */
+    }
+
+    .trust-title {
+        width: 100%; /* Full width for smaller screens */
+        font-size: 28px; /* Reduce font size */
+    }
+
+    .trust-paragraphy {
+        width: 100%; /* Full width for smaller screens */
+        font-size: var(--font-size-medium); /* Reduce font size */
+    }
+
+    .trust-img {
+        width: 100%; /* Full width for smaller screens */
+        max-width: 25rem; /* Limit maximum width */
+        margin-top: 20px; /* Add spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .trust-container {
+        padding: 30px 20px; /* Reduce padding for mobile */
+    }
+
+    .trust-title {
+        font-size: 24px; /* Further reduce font size */
+    }
+
+    .trust-paragraphy {
+        font-size: var(--font-size-small); /* Further reduce font size */
+    }
+
+    .trust-img {
+        max-width: 15rem; /* Further reduce image size */
+    }
 }

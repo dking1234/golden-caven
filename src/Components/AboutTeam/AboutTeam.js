@@ -6,7 +6,7 @@ function AboutTeam() {
   return (
     <div className='about-team'>
         <div className='about-team-partition'>
-            <img src={ManPays} alt="gca" className='about-info-img'/> 
+           
             <div className='about-team-text'>
             <span className='about-team-title'>Our Expertise (Skills & Strengths)
             </span>
@@ -17,6 +17,7 @@ function AboutTeam() {
             <span className='about-team-sub-title'>Cutting-Edge Technology for Fast Transactions</span>
             <p className='about-team-paragraphy'>Time is money, and we ensure that every transaction is processed instantly and efficiently. By leveraging AI-driven risk assessment, blockchain technology, and high-speed payment gateways, we minimize delays and maximize reliability.</p>
             </div>
+            <img src={ManPays} alt="gca" className='about-info-img'/> 
         </div>
     </div>
   )

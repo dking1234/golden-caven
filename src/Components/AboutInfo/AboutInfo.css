@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     width: 90%;
+    gap: var(--spacing-large); /* Add gap between text and image */
 }
 
 .about-info-text {
@@ -26,6 +27,7 @@
     font-weight: 600;
     text-align: start;
     width: 80%;
+    margin-bottom: 20px; /* Add spacing */
 }
 
 .about-info-paragraphy {
@@ -34,8 +36,78 @@
     text-align: start;
     width: 80%;
     color: gray;
+    line-height: 1.6; /* Improve readability */
 }
 
 .about-info-img {
     width: 30rem;
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .about-info-partition {
+        width: 95%; /* Increase width for smaller screens */
+    }
+
+    .about-info-title {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .about-info-paragraphy {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .about-info-img {
+        width: 25rem; /* Reduce image size */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-info-partition {
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: center; /* Center items */
+        gap: var(--spacing-medium); /* Reduce gap */
+    }
+
+    .about-info-text {
+        align-items: center; /* Center items */
+        text-align: center; /* Center-align text */
+    }
+
+    .about-info-title {
+        width: 100%; /* Full width for smaller screens */
+        text-align: center; /* Center-align title */
+    }
+
+    .about-info-paragraphy {
+        width: 100%; /* Full width for smaller screens */
+        text-align: center; /* Center-align paragraph */
+    }
+
+    .about-info-img {
+        width: 100%; /* Full width for smaller screens */
+        max-width: 25rem; /* Limit maximum width */
+        margin-top: 2rem; /* Add spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-info {
+        margin-top: 3rem; /* Reduce margin for mobile */
+        margin-bottom: 3rem; /* Reduce margin for mobile */
+    }
+
+    .about-info-title {
+        font-size: 24px; /* Reduce font size */
+    }
+
+    .about-info-paragraphy {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .about-info-img {
+        max-width: 20rem; /* Further reduce image size */
+    }
 }

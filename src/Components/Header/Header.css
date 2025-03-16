@@ -1,12 +1,12 @@
 .header-container {
-    display: flex;
-    background-color: var(--background-color);
-    box-shadow: var(--shadow);
-    position: sticky;
-    top: 0;
-    height: 4rem;
-    z-index: 1000;
-    width: 100%;
+  display: flex;
+  background-color: var(--background-color);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  height: 4rem;
+  z-index: 1000;
+  width: 100%;
 }
 
 .header-sections {
@@ -17,7 +17,55 @@
   width: 100%;
 }
 
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center the logo */
+}
+
+.header-menus {
+  display: flex;
+  align-items: center;
+  gap: 20rem
+  }
+
 .header-buttons {
   display: flex;
   gap: var(--spacing-small);
+}
+
+.burger-menu {
+  display: none; /* Hide by default */
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+.header-menus {
+  display: none; /* Hide menus and buttons on smaller screens */
+  flex-direction: column;
+  position: absolute;
+  gap:var(--spacing-large);
+  top: 4rem;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-color);
+  box-shadow: var(--shadow);
+  padding: var(--spacing-large);
+}
+
+.header-menus.active {
+  display: flex; /* Show menus and buttons when burger menu is active */
+}
+
+.burger-menu {
+  display: block; /* Show burger menu on smaller screens */
+}
+
+.header-buttons {
+  flex-direction: column;
+  gap: var(--spacing-small);
+}
 }
