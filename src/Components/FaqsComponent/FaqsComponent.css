@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   gap: var(--spacing-large); /* Add gap between image and FAQ content */
-  padding: 2rem;
 }
 
 .faq-img {

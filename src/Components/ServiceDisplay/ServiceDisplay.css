@@ -3,13 +3,15 @@
     align-items: center;
     justify-content: center;
     margin-top: 6rem;
+    width: 100%;
 }
 
 .services-display-partition {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 70%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 5rem;
+    gap: 8rem;
 }
 
 .left-partition,
@@ -30,7 +32,7 @@
     font-size: 24px;
     font-weight: 600;
     text-align: start;
-    width: 80%;
+    width: 70%;
     margin-bottom: 10px;
 }
 
@@ -38,7 +40,7 @@
     font-size: var(--font-size-medium);
     color: gray;
     text-align: start;
-    width: 80%;
+    width: 70%;
     margin-bottom: 40px;
     line-height: 1.6; /* Improve readability */
 }
@@ -58,7 +60,7 @@
 }
 
 .service-image-size-2 {
-    max-width: 500px; /* Adjust for specific image */
+    max-width: 520px; /* Adjust for specific image */
 }
 
 .service-image-size-3 {
@@ -84,7 +86,9 @@
     .services-display-partition {
         flex-direction: column; /* Stack left and right partitions vertically */
         align-items: center; /* Center items */
+        justify-content: center;
         gap: var(--spacing-medium); /* Reduce gap */
+        margin-left: 3rem;
     }
 
     .left-partition,
@@ -104,7 +108,7 @@
     .service-image-size-1,
     .service-image-size-2,
     .service-image-size-3 {
-        max-width: 100%; /* Full width for smaller screens */
+        max-width: 90%; /* Full width for smaller screens */
     }
 }
 

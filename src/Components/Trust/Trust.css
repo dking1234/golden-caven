@@ -75,6 +75,7 @@
     .trust-paragraphy {
         width: 100%; /* Full width for smaller screens */
         font-size: var(--font-size-medium); /* Reduce font size */
+        text-align: start;
     }
 
     .trust-img {
