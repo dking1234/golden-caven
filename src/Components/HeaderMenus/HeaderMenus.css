@@ -19,11 +19,11 @@
 .header-menu-list {
     display: flex;
     align-items: center;
-    gap: var(--spacing-medium)
+    gap: 2rem
 }
 
 .header-menu-text {
-    font-size: var(--font-size-medium);
+    font-size: 14px;
     color: var(--secondary-color);
     cursor: pointer;
 }

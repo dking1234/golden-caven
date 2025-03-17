@@ -7,10 +7,9 @@
 
 .services-display-partition {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 80%;
-    gap: var(--spacing-large); /* Add gap between left and right partitions */
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
 }
 
 .left-partition,
