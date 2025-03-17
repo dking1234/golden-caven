@@ -68,4 +68,8 @@
   flex-direction: column;
   gap: var(--spacing-small);
 }
+
+.header-sections {
+  padding: 0 2rem;
+}
 }

@@ -33,7 +33,7 @@
 
     .partiners-logo img {
         width: 120px; /* Reduce logo size */
-        margin: 0 20px; /* Reduce spacing */
+        margin: 0 10px; /* Reduce spacing */
     }
 }
 
@@ -47,8 +47,12 @@
     }
 
     .partiners-logo img {
-        width: 60px; /* Further reduce logo size */
+        width: 50px; /* Further reduce logo size */
         margin: 0 15px; /* Further reduce spacing */
+    }
+
+    .partiners-logo {
+        gap: 1rem;
     }
 }
 
