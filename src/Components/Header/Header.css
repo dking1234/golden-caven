@@ -53,7 +53,7 @@
   width: 100%;
   background-color: var(--background-color);
   box-shadow: var(--shadow);
-  padding: var(--spacing-large);
+  margin-top: 2rem;
 }
 
 .header-menus.active {
@@ -65,7 +65,7 @@
 }
 
 .header-buttons {
-  flex-direction: column;
+  flex-direction: row;
   gap: var(--spacing-small);
 }
 

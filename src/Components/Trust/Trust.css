@@ -20,7 +20,7 @@
     font-size: 32px;
     font-weight: 600;
     text-align: start;
-    width: 60%;
+    width: 70%;
     margin-bottom: 20px; /* Add spacing */
 }
 
@@ -59,29 +59,29 @@
 
 @media (max-width: 768px) {
     .trust-container {
-        padding: 50px 40px; /* Further reduce padding */
+        padding: 10px 20px;
     }
-
     .trust-partition {
         flex-direction: column; /* Stack items vertically */
         gap: var(--spacing-medium); /* Reduce gap */
     }
 
     .trust-title {
-        width: 100%; /* Full width for smaller screens */
-        font-size: 28px; /* Reduce font size */
+        width: 90%; /* Full width for smaller screens */
+        font-size: 20px; /* Increase font size for small screens */
+        text-align: start; /* Ensure text is left-aligned */
     }
 
     .trust-paragraphy {
-        width: 100%; /* Full width for smaller screens */
-        font-size: var(--font-size-medium); /* Reduce font size */
-        text-align: start;
+        width: 90%; /* Full width for smaller screens */
+        font-size: 16px; /* Increase font size for small screens */
+        text-align: start; /* Ensure text is left-aligned */
     }
 
     .trust-img {
         width: 100%; /* Full width for smaller screens */
-        max-width: 25rem; /* Limit maximum width */
-        margin-top: 20px; /* Add spacing */
+        max-width: 35rem; /* Limit maximum width */
+        margin-top: 2rem; /* Add spacing */
     }
 }
 
@@ -91,11 +91,11 @@
     }
 
     .trust-title {
-        font-size: 24px; /* Further reduce font size */
+        font-size: 24px; /* Further increase font size for mobile */
     }
 
     .trust-paragraphy {
-        font-size: var(--font-size-small); /* Further reduce font size */
+        font-size: 16px; /* Further increase font size for mobile */
     }
 
     .trust-img {

@@ -88,8 +88,7 @@
 
     .about-info-img {
         width: 100%; /* Full width for smaller screens */
-        max-width: 25rem; /* Limit maximum width */
-        margin-top: 2rem; /* Add spacing */
+        max-width: 30rem; /* Limit maximum width */
     }
 }
 

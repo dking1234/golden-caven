@@ -39,7 +39,7 @@
 }
 
 .dev-img {
-    width: 500px;
+    width: 600px;
     max-width: 100%; /* Ensure image doesn't overflow */
     height: auto; /* Maintain aspect ratio */
 }
@@ -59,7 +59,7 @@
     }
 
     .dev-img {
-        width: 400px; /* Reduce image size */
+        width: 500px; /* Reduce image size */
     }
 }
 
@@ -67,29 +67,31 @@
     .dev-partition {
         flex-direction: column; /* Stack text and image vertically */
         align-items: center; /* Center items */
-        gap: var(--spacing-medium); /* Reduce gap */
+        gap: var(--spacing-small); /* Reduce gap */
     }
 
     .dev-info {
         align-items: center; /* Center text for smaller screens */
         text-align: center; /* Center-align text */
+        margin-left: 0;
     }
 
     .dev-title {
         font-size: 28px; /* Reduce font size */
-        text-align: center; /* Center-align title */
+        text-align: start; /* Center-align title */
         margin-top: 5rem;
+        width: 90%;
     }
 
     .dev-paragraphy {
         font-size: var(--font-size-small); /* Reduce font size */
-        text-align: center; /* Center-align paragraph */
-        width: 100%; /* Full width for smaller screens */
+        text-align: start; /* Center-align paragraph */
+        width: 90%; /* Full width for smaller screens */
     }
 
     .dev-img {
-        width: 100%; /* Full width for smaller screens */
-        max-width: 700px; /* Limit maximum width */
+        width: 100%; /* Increase image width to 100% of the container */
+        max-width: 700px; /* Increase max-width for larger image */
     }
 }
 
@@ -107,6 +109,7 @@
     }
 
     .dev-img {
-        max-width: 300px; /* Further reduce image size */
+        width: 100%; /* Increase image width to 100% of the container */
+        max-width: 500px; /* Further increase max-width for larger image */
     }
 }

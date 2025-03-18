@@ -13,11 +13,11 @@ function Partiners() {
         <span className='partiner-title'>Businesses using GCA Pay to
         boost conversion & Transaction speed</span>
         <div className='partiners-logo'>
-            <img src={channel} alt="gca"/>
-            <img src={Rackspace} alt="gca"/>
-            <img src={Nike} alt="gca"/>
-            <img src={Pepsi} alt="gca"/>
-            <img src={western} alt="gca"/>
+            <img src={channel} alt="gca" className='partner-img'/>
+            <img src={Rackspace} alt="gca" className='partner-img'/>
+            <img src={Nike} alt="gca" className='partner-img'/>
+            <img src={Pepsi} alt="gca" className='partner-img'/>
+            <img src={western} alt="gca" className='partner-img'/>
         </div>
     </div>
   )
