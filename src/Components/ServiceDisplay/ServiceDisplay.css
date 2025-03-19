@@ -10,8 +10,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-left: 8rem;
-    gap: 8rem;
+    margin-left: 5rem;
+    gap: 9rem;
 }
 
 .left-partition,

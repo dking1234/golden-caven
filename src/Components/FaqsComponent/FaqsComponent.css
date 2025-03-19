@@ -2,14 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-large); /* Add gap between image and FAQ content */
+  gap: 8rem
 }
 
 .faq-img {
   width: 35rem;
   max-width: 100%; /* Ensure image doesn't overflow */
   height: auto; /* Maintain aspect ratio */
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
 }
 
 .faq-info {
