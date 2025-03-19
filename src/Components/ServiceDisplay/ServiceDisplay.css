@@ -32,7 +32,7 @@
     font-size: 24px;
     font-weight: 600;
     text-align: start;
-    width: 70%;
+    width: 88%;
     margin-bottom: 10px;
 }
 
@@ -40,7 +40,7 @@
     font-size: var(--font-size-medium);
     color: gray;
     text-align: start;
-    width: 70%;
+    width: 88%;
     margin-bottom: 40px;
     line-height: 1.6; /* Improve readability */
 }
