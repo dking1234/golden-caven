@@ -50,21 +50,26 @@
 .service-image-size-2,
 .service-image-size-3 {
     width: 100%; /* Make images responsive */
-    max-width: 500px; /* Limit maximum width */
+    max-width: 50rem; /* Limit maximum width */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 30px;
 }
 
+.service-image-size {
+    max-width: 30rem; /* Adjust for specific image */
+    
+}
+
 .service-image-size-1 {
-    max-width: 400px; /* Adjust for specific image */
+    max-width: 25rem; /* Adjust for specific image */
 }
 
 .service-image-size-2 {
-    max-width: 480px; /* Adjust for specific image */
+    max-width: 30rem; /* Adjust for specific image */
 }
 
 .service-image-size-3 {
-    max-width: 400px; /* Adjust for specific image */
+    max-width: 25rem; /* Adjust for specific image */
 }
 
 /* Responsive Styles */
