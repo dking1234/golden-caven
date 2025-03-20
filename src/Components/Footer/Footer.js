@@ -11,7 +11,7 @@ function Footer() {
     <div className='footer-container'>
         <div className='footer-partition'>
             <div className='footer-left-partition'>
-                <Logo className='footer-logo'/>
+                {/* <Logo className='footer-logo'/> */}
                 <span className='footer-about-text'>Seamless transactions for businesses and individuals. One platform, endless possibilities</span>
                 <h1 className='footer-title'>Get the GCA Pay App</h1>
                 <div className='footer-download-icons'>

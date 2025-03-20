@@ -49,6 +49,11 @@
     height: auto; /* Maintain aspect ratio */
 }
 
+.footer-logo {
+    color: #B38235;
+    width: 8rem;
+}
+
 .footer-img {
     width: 30rem;
     max-width: 100%; /* Ensure image doesn't overflow */
