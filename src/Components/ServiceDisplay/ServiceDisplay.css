@@ -1,3 +1,4 @@
+/* Existing CSS */
 .services-display-continer {
     display: flex;
     flex-direction: column;
@@ -9,21 +10,14 @@
 
 .services-display-partition {
     display: flex;
-    gap: 20rem;
+    gap: 15rem;
     align-items: center; 
     justify-content: center;
 }
 
-.left-partition,
-.right-partition {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-large); /* Add gap between service displays */
-}
-
 .service-display {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack title, paragraph, and image vertically */
     align-items: flex-start;
     justify-content: center;
 }
@@ -40,7 +34,7 @@
     font-size: 24px;
     font-weight: 600;
     text-align: start;
-    width: 90%;
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -50,113 +44,106 @@
     text-align: start;
     width: 100%;
     margin-bottom: 40px;
-    line-height: 1.6; /* Improve readability */
-}
-
-.service-display-paragraphy1 {
-    font-size: var(--font-size-medium);
-    color: gray;
-    text-align: start;
-    width: 100%;
-    margin-bottom: 40px;
-    line-height: 1.6; /* Improve readability */
+    line-height: 1.6;
 }
 
 .service-display-paragraphy2 {
     font-size: var(--font-size-medium);
     color: gray;
     text-align: start;
-    width: 90%;
+    width: 100%;
     margin-bottom: 40px;
-    line-height: 1.6; /* Improve readability */
+    line-height: 1.6;
 }
 
 .service-image-size,
 .service-image-size-1,
 .service-image-size-2,
 .service-image-size-3 {
-    width: 100%; /* Make images responsive */
-    max-width: 50rem; /* Limit maximum width */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    max-width: 50rem;
+    height: auto;
     margin-bottom: 30px;
 }
 
 .service-image-size {
-    max-width: 27rem; /* Adjust for specific image */
-    
+    max-width: 27rem;
 }
 
 .service-image-size-1 {
-    max-width: 25rem; /* Adjust for specific image */
+    max-width: 24rem;
 }
 
 .service-image-size-2 {
-    max-width: 31rem; /* Adjust for specific image */
+    max-width: 31rem;
 }
 
 .service-image-size-3 {
-    max-width: 25rem; /* Adjust for specific image */
+    max-width: 24rem;
 }
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
+    .service-display-container {
+        padding: 60px 40px; /* Adjusted padding */
+    }
     .services-display-partition {
-        width: 90%; /* Increase width for smaller screens */
+        width: 90%;
     }
 
     .service-display-title {
-        width: 90%; /* Adjust title width */
+        width: 90%;
     }
 
     .service-display-paragraphy {
-        width: 90%; /* Adjust paragraph width */
+        width: 90%;
     }
 }
 
 @media (max-width: 768px) {
-    .services-display-partition {
-        flex-direction: column; /* Stack left and right partitions vertically */
-        align-items: center; /* Center items */
-        justify-content: center;
-        gap: var(--spacing-medium); /* Reduce gap */
-        margin-left: 3rem;
+    .services-display-continer {
+        padding: 0 20px;
     }
 
-    .left-partition,
-    .right-partition {
-        width: 100%; /* Full width for smaller screens */
+    .services-display-partition {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-medium);
     }
 
     .service-display-title {
-        font-size: 20px; /* Reduce font size */
+        font-size: 20px;
+        margin-top: 1rem;
     }
 
     .service-display-paragraphy {
-        font-size: var(--font-size-small); /* Reduce font size */
+        font-size: var(--font-size-small);
+        width: 100%;
     }
 
     .service-image-size,
     .service-image-size-1,
     .service-image-size-2,
     .service-image-size-3 {
-        max-width: 90%; /* Full width for smaller screens */
+        max-width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .services-display-continer {
-        margin-top: 3rem; /* Reduce margin for mobile */
+        margin-top: 3rem;
     }
 
     .services-display-partition {
-        width: 95%; /* Increase width for mobile */
+        width: 95%;
     }
 
     .service-display-title {
-        font-size: 18px; /* Further reduce font size */
+        font-size: 18px;
     }
 
     .service-display-paragraphy {
-        font-size: var(--font-size-xsmall); /* Further reduce font size */
+        font-size: var(--font-size-xsmall);
     }
 }

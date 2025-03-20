@@ -10,12 +10,12 @@ function ServiceDisplay() {
     <div className='services-display-continer'>
         <div className='services-display-partition'>
         <div className='service-display'>
-                <img src={International} alt="gca" className='service-image-size-1'/> 
-                <span className='service-display-title'>Bank Transfers & Integration Built for Businesses</span>
-                <p className='service-display-paragraphy1'>Link your bank and unlock frictionless transactions send, receive, and manage payments effortlessly. 
+                <span className='service-display-title'>Bank Transfers & Built for Businesses</span>
+                <p className='service-display-paragraphy'>Link your bank and unlock frictionless transactions send, receive, and manage payments effortlessly. 
                                     Our secure integration allows you to connect your 
                                     banking operations with GCA Pay, making finance 
-                                    management smoother than ever. </p>
+                                    management smoother than ever.</p>
+                <img src={International} alt="gca" className='service-image-size-1'/> 
                 </div>
                 <div className='service-display'>
                 <span className='service-display-title'>International Payments Go Global, Instantly</span>
@@ -29,13 +29,13 @@ function ServiceDisplay() {
 
         <div className='services-display-partition'>
         <div className='service-display'>
-                <img src={Local} alt="gca" className='service-image-size-3'/> 
-                <span className='service-display-title2'>OTC Desk – High-Value Trading, Simplified</span>
+                <span className='service-display-title'>OTC Desk – High-Value Trading, Simplified</span>
                 <p className='service-display-paragraphy2'>Got a large transaction? No problem. Our Over-the-
                                     Counter (OTC) Desk is designed for businesses and 
                                     high-volume traders who need fast settlements, 
                                     personalized support, and the best rates—without
-                                    the hassle of traditional banks. </p>
+                                    the hassle of traditional banks.</p>
+                                    <img src={Local} alt="gca" className='service-image-size-3'/> 
                 </div> 
                 <div className='service-display'>
                 <span className='service-display-title'>Local Transfers with MNOs Money Where You Need It</span>

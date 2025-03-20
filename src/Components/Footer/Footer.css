@@ -124,7 +124,7 @@
     }
 
     .footer-img {
-        width: 25rem; /* Reduce image size */
+        width: 20rem; /* Reduce image size */
     }
 
     .footer-low-partition {
@@ -151,6 +151,10 @@
 
     .footer-download-icons {
         justify-content: center; /* Center icons */
+    }
+
+    .footer-right-partition {
+        padding: 20px;
     }
 
     .footer-img {

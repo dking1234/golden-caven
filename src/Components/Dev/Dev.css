@@ -1,117 +1,109 @@
 .dev-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 10px;
+    align-items: center;
     background-color: var(--primary-color);
 }
 
 .dev-partition {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;    
+    width: 100%;
 }
 
 .dev-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 4.5rem;
+    padding: 80px;
 }
 
 .dev-title {
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 24px; /* Increased font size for better emphasis */
+    font-weight: 700; /* Bold font for better readability */
     text-align: start;
-    color: #fff;
-    width: 80%;
-    margin-bottom: 20px; /* Add spacing */
+    width: 100%;
+    margin-bottom: 20px;
+    color: #fff; /* White color for better contrast */
 }
 
 .dev-paragraphy {
-    font-size: var(--font-size-medium);
-    color: #fff;
+    font-size: 14px;
+    color: #fff; /* White color for better contrast */
     text-align: start;
-    width: 60%;
-    line-height: 1.6; /* Improve readability */
-}
-
-.dev-img-position {
-    padding: 30px 0;
+    width: 100%;
+    line-height: 1.8; /* Increased line height for better readability */
+    margin-bottom: 20px;
 }
 
 .dev-img {
-    width: 62rem;
-    max-width: 100%; /* Ensure image doesn't overflow */
-    height: auto; /* Maintain aspect ratio */
+    width: 40%;
 }
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
+    .dev-container {
+        padding: 60px 40px; /* Adjusted padding */
+    }
+
     .dev-partition {
-        width: 95%; /* Increase width for smaller screens */
+        gap: 40px; /* Reduced gap for smaller screens */
     }
 
     .dev-title {
-        width: 100%; /* Full width for smaller screens */
+        font-size: 32px; /* Slightly smaller font size */
     }
 
     .dev-paragraphy {
-        width: 90%; /* Adjust paragraph width */
-    }
-
-    .dev-img {
-        width: 500px; /* Reduce image size */
+        font-size: 16px; /* Slightly smaller font size */
     }
 }
 
 @media (max-width: 768px) {
+    .dev-container {
+        padding: 40px 20px; /* Further reduced padding */
+    }
+
     .dev-partition {
-        flex-direction: column; /* Stack text and image vertically */
-        align-items: center; /* Center items */
-        gap: var(--spacing-small); /* Reduce gap */
+        flex-direction: column; /* Stack content vertically */
+        gap: 30px; /* Reduced gap */
+        align-items: flex-start;
     }
 
     .dev-info {
-        align-items: center; /* Center text for smaller screens */
-        text-align: center; /* Center-align text */
-        margin-left: 0;
+        padding: 15px;
     }
 
     .dev-title {
-        font-size: 28px; /* Reduce font size */
-        text-align: start; /* Center-align title */
-        margin-top: 5rem;
-        width: 90%;
+        font-size: 28px; /* Adjusted font size for mobile */
+        margin-bottom: 15px;
     }
 
     .dev-paragraphy {
-        font-size: var(--font-size-small); /* Reduce font size */
-        text-align: start; /* Center-align paragraph */
-        width: 90%; /* Full width for smaller screens */
+        font-size: 16px; /* Adjusted font size for mobile */
+        line-height: 1.6; /* Adjusted line height */
+        margin-bottom: 0;
     }
 
     .dev-img {
-        width: 100%; /* Increase image width to 100% of the container */
-        max-width: 700px; /* Increase max-width for larger image */
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .dev-container {
-        padding: 20px 10px; /* Reduce padding for mobile */
+        padding: 30px 15px; /* Further reduced padding */
     }
 
     .dev-title {
-        font-size: 24px; /* Further reduce font size */
+        font-size: 24px; /* Smaller font size for very small screens */
     }
 
     .dev-paragraphy {
-        font-size: var(--font-size-xsmall); /* Further reduce font size */
+        font-size: 14px; /* Smaller font size for very small screens */
     }
 
     .dev-img {
-        width: 100%; /* Increase image width to 100% of the container */
-        max-width: 500px; /* Further increase max-width for larger image */
+        width: 100%; /* Full width for very small screens */
     }
 }

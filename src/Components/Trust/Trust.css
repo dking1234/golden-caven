@@ -1,104 +1,122 @@
 .trust-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F5F5F5;
     padding: 90px 80px;
 }
 
 .trust-partition {
     display: flex;
-    gap: var(--spacing-large);
-    align-items: center; /* Center items vertically */
+    gap: 60px; /* Increased gap for better spacing */
+    align-items: center;
+    max-width: 1200px; /* Limit maximum width for better readability */
+    width: 100%;
 }
 
 .trust-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 60%; /* Adjust width for better text-to-image ratio */
 }
 
 .trust-title {
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 36px; /* Increased font size for better emphasis */
+    font-weight: 700; /* Bold font for better readability */
     text-align: start;
-    width: 70%;
-    margin-bottom: 20px; /* Add spacing */
+    width: 100%;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for better contrast */
 }
 
 .trust-paragraphy {
-    font-size: var(--font-size-large);
-    color: gray;
+    font-size: 18px;
+    color: #666; /* Slightly darker gray for better readability */
     text-align: start;
-    width: 80%;
-    line-height: 1.6; /* Improve readability */
+    width: 100%;
+    line-height: 1.8; /* Increased line height for better readability */
+    margin-bottom: 20px;
 }
 
 .trust-img {
-    width: 30rem;
-    max-width: 100%; /* Ensure image doesn't overflow */
-    height: auto; /* Maintain aspect ratio */
+    width: 35rem; /* Increased image size */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    height: auto;
+    border-radius: 10px; /* Add rounded corners for a modern look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
 }
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
     .trust-container {
-        padding: 70px 60px; /* Reduce padding */
+        padding: 60px 40px; /* Adjusted padding */
+    }
+
+    .trust-partition {
+        gap: 40px; /* Reduced gap for smaller screens */
     }
 
     .trust-title {
-        width: 70%; /* Adjust title width */
+        font-size: 32px; /* Slightly smaller font size */
     }
 
     .trust-paragraphy {
-        width: 90%; /* Adjust paragraph width */
+        font-size: 16px; /* Slightly smaller font size */
     }
 
     .trust-img {
-        width: 25rem; /* Reduce image size */
+        width: 30rem; /* Adjusted image size */
     }
 }
 
 @media (max-width: 768px) {
     .trust-container {
-        padding: 10px 20px;
+        padding: 40px 20px; /* Further reduced padding */
     }
+
     .trust-partition {
-        flex-direction: column; /* Stack items vertically */
-        gap: var(--spacing-medium); /* Reduce gap */
+        flex-direction: column; /* Stack content vertically */
+        gap: 30px; /* Reduced gap */
+        align-items: flex-start;
+    }
+
+    .trust-info {
+        width: 100%; /* Full width for better use of space */
     }
 
     .trust-title {
-        width: 90%; /* Full width for smaller screens */
-        font-size: 20px; /* Increase font size for small screens */
-        text-align: start; /* Ensure text is left-aligned */
+        font-size: 28px; /* Adjusted font size for mobile */
+        margin-bottom: 15px;
     }
 
     .trust-paragraphy {
-        width: 90%; /* Full width for smaller screens */
-        font-size: 16px; /* Increase font size for small screens */
-        text-align: start; /* Ensure text is left-aligned */
+        font-size: 16px; /* Adjusted font size for mobile */
+        line-height: 1.6; /* Adjusted line height */
     }
 
     .trust-img {
-        width: 100%; /* Full width for smaller screens */
-        max-width: 35rem; /* Limit maximum width */
-        margin-top: 2rem; /* Add spacing */
+        width: 100%; /* Full width for mobile */
+        max-width: 95%; /* Ensure it doesn't overflow */
+        margin-top: 20px; /* Added spacing above the image */
+        align-self: center;
     }
 }
 
 @media (max-width: 480px) {
     .trust-container {
-        padding: 30px 20px; /* Reduce padding for mobile */
+        padding: 30px 15px; /* Further reduced padding */
     }
 
     .trust-title {
-        font-size: 24px; /* Further increase font size for mobile */
+        font-size: 24px; /* Smaller font size for very small screens */
     }
 
     .trust-paragraphy {
-        font-size: 16px; /* Further increase font size for mobile */
+        font-size: 14px; /* Smaller font size for very small screens */
     }
 
     .trust-img {
-        max-width: 15rem; /* Further reduce image size */
+        width: 100%; /* Full width for very small screens */
     }
 }
