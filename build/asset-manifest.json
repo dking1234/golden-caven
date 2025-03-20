@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.14ab0731.css",
+    "main.js": "/static/js/main.3897f117.js",
+    "static/js/453.bb5301dd.chunk.js": "/static/js/453.bb5301dd.chunk.js",
+    "static/media/FaqImage.png": "/static/media/FaqImage.f558f965f9634de6e174.png",
+    "static/media/Backgorund.png": "/static/media/Backgorund.4cc7f81c1560da774fd0.png",
+    "static/media/FooterImage.png": "/static/media/FooterImage.ca0031c744b5fba1c70a.png",
+    "static/media/Local.png": "/static/media/Local.f4c2a738f57b3f239542.png",
+    "static/media/Trading.png": "/static/media/Trading.301a49238c671ba44b9f.png",
+    "static/media/Bank.png": "/static/media/Bank.e9a7545667537dcb2f7a.png",
+    "static/media/Dev.png": "/static/media/Dev.b36aaaa3f316e16431b0.png",
+    "static/media/International.png": "/static/media/International.f6d4a524af7830d4bab4.png",
+    "static/media/ManPays.png": "/static/media/ManPays.9e7dcf8179df81439bb5.png",
+    "index.html": "/index.html",
+    "main.14ab0731.css.map": "/static/css/main.14ab0731.css.map",
+    "main.3897f117.js.map": "/static/js/main.3897f117.js.map",
+    "453.bb5301dd.chunk.js.map": "/static/js/453.bb5301dd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14ab0731.css",
+    "static/js/main.3897f117.js"
+  ]
+}

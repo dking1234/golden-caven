@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import Logo from '../Logo/Logo';
 import QRcode from '../../Assets/QR.png';
 import AppStore from '../../Assets/Appstore.png';
 import GooglePlay from '../../Assets/Googleplay.png';
