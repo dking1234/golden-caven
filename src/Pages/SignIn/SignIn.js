@@ -25,20 +25,8 @@ function SignIn() {
   return (
     <div className="signup-container">
       <div className="signup-form">
-        <h2>Create Your Account</h2>
+        <h2>Sign Your Account</h2>
         <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Full Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Enter your full name"
-              required
-            />
-          </div>
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input
@@ -64,11 +52,11 @@ function SignIn() {
             />
           </div>
           <button type="submit" className="signup-button">
-            Sign Up
+            Sign In
           </button>
         </form>
         <p className="login-link">
-          Already have an account? <a href="/login">Log in</a>
+          Do not have an account? <a href="/login">Contact desk</a>
         </p>
       </div>
     </div>

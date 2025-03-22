@@ -2,6 +2,7 @@
   
   .signup-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -13,7 +14,7 @@
     background-color: #121212; /* Dark gray background for the form */
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 4rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -40,7 +41,7 @@
   }
   
   .form-group input {
-    width: 100%;
+    width: 93%;
     padding: 0.75rem;
     border: 1px solid #333; /* Dark gray border */
     border-radius: 5px;
@@ -56,13 +57,13 @@
   }
   
   .form-group input:focus {
-    border-color: #007bff; /* Blue border on focus */
+    border-color: #121212; /* Blue border on focus */
   }
   
   .signup-button {
     width: 100%;
     padding: 0.75rem;
-    background-color: #007bff; /* Blue button */
+    background-color: #242323; /* Blue button */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -72,17 +73,17 @@
   }
   
   .signup-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #000000; /* Darker blue on hover */
   }
   
   .login-link {
     margin-top: 1rem;
     font-size: 14px;
-    color: #b0b0b0; /* Light gray text */
+    color: #d1d1d1; /* Light gray text */
   }
   
   .login-link a {
-    color: #007bff; /* Blue link */
+    color: #979797; /* Blue link */
     text-decoration: none;
   }
   

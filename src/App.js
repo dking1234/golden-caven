@@ -5,6 +5,7 @@ import About from './Pages/About/About';
 import Services from './Pages/Services/Services'
 import RateCurrence from './Pages/Rate&Currence/RateCurrence';
 import SignIn from './Pages/SignIn/SignIn';
+import ContactPage from './Pages/Contact/Contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/rate-currencies" element={<RateCurrence />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </Router>
     </div>
