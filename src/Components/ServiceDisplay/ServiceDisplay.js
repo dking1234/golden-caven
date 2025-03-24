@@ -30,7 +30,7 @@ function ServiceDisplay() {
         <div className='services-display-partition'>
         <div className='service-display'>
                 <span className='service-display-title'>OTC Desk – High-Value Trading, Simplified</span>
-                <p className='service-display-paragraphy2'>Got a large transaction? No problem. Our Over-the-
+                <p className='service-display-paragraphy'>Got a large transaction? No problem. Our Over-the-
                                     Counter (OTC) Desk is designed for businesses and 
                                     high-volume traders who need fast settlements, 
                                     personalized support, and the best rates—without

@@ -20,6 +20,7 @@
     flex-direction: column; /* Stack title, paragraph, and image vertically */
     align-items: flex-start;
     justify-content: center;
+    width: 100%;
 }
 
 .service-display-title {
@@ -67,7 +68,7 @@
 }
 
 .service-image-size {
-    max-width: 27rem;
+    max-width: 30srem;
 }
 
 .service-image-size-1 {
@@ -88,15 +89,15 @@
         padding: 60px 40px; /* Adjusted padding */
     }
     .services-display-partition {
-        width: 90%;
+        width: 100%;
     }
 
     .service-display-title {
-        width: 90%;
+        width: 100%;
     }
 
     .service-display-paragraphy {
-        width: 90%;
+        width: 100%;
     }
 }
 

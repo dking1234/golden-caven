@@ -6,8 +6,8 @@
     align-items: flex-start;
     background-color: #000;
     color: #fff;
-    padding: 2rem;
-    min-height: 100vh;
+    padding: 1rem 4rem;
+    min-height: 90vh;
   }
   
   /* Left Section - Contact Form */
@@ -50,7 +50,7 @@
   
   .form-textarea {
     resize: vertical;
-    width: 94%;
+    width: 93%;
   }
   
   
@@ -58,7 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 97.5%;
+    width: 96.5%;
     padding: 1rem;
     margin-top: 2rem;
     background-color: #242323; /* Blue button */
