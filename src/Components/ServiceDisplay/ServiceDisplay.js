@@ -38,7 +38,7 @@ function ServiceDisplay() {
                                     <img src={Local} alt="gca" className='service-image-size-3'/> 
                 </div> 
                 <div className='service-display'>
-                <span className='service-display-title'>Local Transfers with MNOs Money Where You Need It</span>
+                <span className='service-display-title'>Local Transfers With Into Mobile Network Operators</span>
                 <p className='service-display-paragraphy'>Pay bills, send money, or top up mobile wallets 
                                     with a few taps. We’ve partnered with top mobile 
                                     network operators (MNOs) to make sure your 
