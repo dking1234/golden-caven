@@ -1,3 +1,4 @@
+/* Add this to your Header.css */
 .header-container {
   display: flex;
   background-color: var(--background-color);
@@ -20,14 +21,14 @@
 .logo-container {
   flex: 1;
   display: flex;
-  justify-content: center; /* Center the logo */
+  justify-content: center;
 }
 
 .header-menus {
   display: flex;
   align-items: center;
-  gap: 3rem
-  }
+  gap: 3rem;
+}
 
 .header-buttons {
   display: flex;
@@ -35,41 +36,60 @@
 }
 
 .burger-menu {
-  display: none; /* Hide by default */
+  display: none;
   cursor: pointer;
   font-size: 1.5rem;
   color: #fff;
+  transition: transform 0.3s ease;
 }
 
-/* Responsive Styles */
+.burger-menu:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile menu animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 768px) {
-.header-menus {
-  display: none; /* Hide menus and buttons on smaller screens */
-  flex-direction: column;
-  position: absolute;
-  gap:var(--spacing-large);
-  top: 4rem;
-  left: 0;
-  width: 100%;
-  background-color: var(--background-color);
-  box-shadow: var(--shadow);
-  margin-top: 2rem;
-}
+  .header-menus {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    gap: var(--spacing-large);
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    box-shadow: var(--shadow);
+    padding: 1rem 0;
+    animation: slideDown 0.3s ease-out forwards;
+  }
 
-.header-menus.active {
-  display: flex; /* Show menus and buttons when burger menu is active */
-}
+  .header-menus.active {
+    display: flex;
+  }
 
-.burger-menu {
-  display: block; /* Show burger menu on smaller screens */
-}
+  .burger-menu {
+    display: block;
+  }
 
-.header-buttons {
-  flex-direction: row;
-  gap: var(--spacing-small);
-}
+  .header-buttons {
+    flex-direction: row;
+    gap: var(--spacing-small);
+    justify-content: center;
+    padding: 1rem;
+  }
 
-.header-sections {
-  padding: 0 2rem;
-}
+  .header-sections {
+    padding: 0 2rem;
+  }
 }

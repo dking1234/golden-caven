@@ -1,14 +1,62 @@
-.button-container {
-    background-color: #000;
-    border-radius: 5px;
-    color: var(--secondary-color);
-    padding: var(--spacing-small) 20px;
-    align-items: center;
-    justify-content: center;
-    font-size: var(--font-size-medium);
-    cursor: pointer;
-}
-
-.button-container:hover {
-    background-color: #121212;
-}
+@keyframes buttonFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .button-container {
+      background-color: #000;
+      border-radius: 5px;
+      color: var(--secondary-color);
+      padding: var(--spacing-small) 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--font-size-medium);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      opacity: 0;
+      transform: translateY(5px);
+      animation: buttonFadeIn 0.5s ease-out forwards;
+      will-change: transform; /* Optimize for smooth animation */
+  }
+  
+  /* Smooth zoom effect on hover */
+  .button-container:hover {
+      background-color: #121212;
+      color: #dadada;
+      transform: scale(1.05); /* Slightly larger size */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  }
+  
+  /* Delay the second button animation */
+  .header-buttons .button-container:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  /* Mobile menu button animations */
+  @media (max-width: 768px) {
+    .header-menus.active .button-container {
+      animation: buttonFadeIn 0.5s ease-out forwards;
+    }
+    
+    /* Stagger the animations in mobile menu */
+    .header-menus.active .button-container:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+    
+    .header-menus.active .button-container:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+    
+    /* Slightly reduced zoom for mobile */
+    .button-container:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }

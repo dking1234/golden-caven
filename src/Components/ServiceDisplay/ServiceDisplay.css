@@ -1,158 +1,150 @@
-/* Existing CSS */
-.services-display-continer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 6rem;
-    padding: 50px 80px;
-}
-
-.services-display-partition {
-    display: flex;
-    gap: 15rem;
-    align-items: center; 
-    justify-content: center;
-}
-
-.service-display {
-    display: flex;
-    flex-direction: column; /* Stack title, paragraph, and image vertically */
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-}
-
-.service-display1 {
-    display: flex;
-    flex-direction: column; /* Stack title, paragraph, and image vertically */
-    align-items: flex-end;
-    justify-content: center;
-    width: 100%;
-}
-
-.service-display-title {
-    font-size: 24px;
-    font-weight: 600;
-    text-align: start;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.service-display-title2 {
-    font-size: 24px;
-    font-weight: 600;
-    text-align: start;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.service-display-paragraphy {
-    font-size: var(--font-size-medium);
-    color: gray;
-    text-align: start;
-    width: 100%;
-    margin-bottom: 40px;
-    line-height: 1.6;
-}
-
-.service-display-paragraphy2 {
-    font-size: var(--font-size-medium);
-    color: gray;
-    text-align: start;
-    width: 100%;
-    margin-bottom: 40px;
-    line-height: 1.6;
-}
-
-.service-image-size,
-.service-image-size-1,
-.service-image-size-2,
-.service-image-size-3 {
-    width: 100%;
-    max-width: 50rem;
-    height: auto;
-    margin-bottom: 30px;
-}
-
-.service-image-size {
-    max-width: 27rem;
-}
-
-.service-image-size-1 {
-    max-width: 24rem;
-}
-
-.service-image-size-2 {
-    max-width: 31rem;
-}
-
-.service-image-size-3 {
-    max-width: 24rem;
-}
-
-/* Responsive Styles */
-@media (max-width: 1200px) {
-    .service-display-container {
-        padding: 60px 40px; /* Adjusted padding */
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
     }
-    .services-display-partition {
-        width: 100%;
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-
-    .service-display-title {
-        width: 100%;
-    }
-
-    .service-display-paragraphy {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .services-display-continer {
-        padding: 0 20px;
-    }
-
-    .services-display-partition {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: var(--spacing-medium);
-    }
-
-    .service-display-title {
-        font-size: 20px;
-        margin-top: 1rem;
-    }
-
-    .service-display-paragraphy {
-        font-size: var(--font-size-small);
-        width: 100%;
-    }
-
-    .service-image-size,
-    .service-image-size-1,
-    .service-image-size-2,
-    .service-image-size-3 {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .services-display-continer {
-        margin-top: 3rem;
-    }
-
-    .services-display-partition {
-        width: 95%;
-    }
-
-    .service-display-title {
-        font-size: 18px;
-    }
-
-    .service-display-paragraphy {
-        font-size: var(--font-size-xsmall);
-    }
-}
+  }
+  
+  /* Initial state for service items */
+  .service-display, .service-display1 {
+    opacity: 0;
+  }
+  
+  /* Existing styles remain the same */
+  .services-display-continer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 6rem;
+      padding: 50px 80px;
+  }
+  
+  .services-display-partition {
+      display: flex;
+      gap: 15rem;
+      align-items: center; 
+      justify-content: center;
+  }
+  
+  .service-display {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      width: 100%;
+  }
+  
+  .service-display1 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      width: 100%;
+  }
+  
+  .service-display-title {
+      font-size: 24px;
+      font-weight: 600;
+      text-align: start;
+      width: 100%;
+      margin-bottom: 10px;
+  }
+  
+  .service-display-paragraphy {
+      font-size: var(--font-size-medium);
+      color: gray;
+      text-align: start;
+      width: 100%;
+      margin-bottom: 40px;
+      line-height: 1.6;
+  }
+  
+  .service-image-size,
+  .service-image-size-1,
+  .service-image-size-2,
+  .service-image-size-3 {
+      width: 100%;
+      max-width: 50rem;
+      height: auto;
+      margin-bottom: 30px;
+  }
+  
+  .service-image-size {
+      max-width: 27rem;
+  }
+  
+  .service-image-size-1 {
+      max-width: 24rem;
+  }
+  
+  .service-image-size-2 {
+      max-width: 31rem;
+  }
+  
+  .service-image-size-3 {
+      max-width: 24rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+      .service-display-container {
+          padding: 60px 40px;
+      }
+      .services-display-partition {
+          width: 100%;
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .services-display-continer {
+          padding: 0 20px;
+      }
+  
+      .services-display-partition {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: var(--spacing-medium);
+      }
+  
+      .service-display-title {
+          font-size: 20px;
+          margin-top: 1rem;
+      }
+  
+      .service-display-paragraphy {
+          font-size: var(--font-size-small);
+          width: 100%;
+      }
+  
+      .service-image-size,
+      .service-image-size-1,
+      .service-image-size-2,
+      .service-image-size-3 {
+          max-width: 100%;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .services-display-continer {
+          margin-top: 3rem;
+      }
+  
+      .services-display-partition {
+          width: 95%;
+      }
+  
+      .service-display-title {
+          font-size: 18px;
+      }
+  
+      .service-display-paragraphy {
+          font-size: var(--font-size-xsmall);
+      }
+  }
