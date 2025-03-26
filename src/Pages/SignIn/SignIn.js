@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './SignIn.css'; // Import the CSS file
 
 function SignIn() {
@@ -7,6 +8,7 @@ function SignIn() {
     email: '',
     password: '',
   });
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,6 +22,10 @@ function SignIn() {
     e.preventDefault();
     console.log('Form Data Submitted:', formData);
     // Add your sign-up logic here (e.g., API call)
+  };
+
+  const handleContactClick = () => {
+    navigate('/contact'); // Programmatic navigation
   };
 
   return (
@@ -56,7 +62,13 @@ function SignIn() {
           </button>
         </form>
         <p className="login-link">
-          Do not have an account? <a href="/contact">Contact desk</a>
+          Do not have an account?{' '}
+          <span 
+            onClick={handleContactClick} 
+            style={{ cursor: 'pointer', textDecoration: 'underline', color: 'inherit' }}
+          >
+            Contact desk
+          </span>
         </p>
       </div>
     </div>
