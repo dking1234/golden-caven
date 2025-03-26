@@ -17,7 +17,7 @@ function ServiceDisplay() {
                                     management smoother than ever.</p>
                 <img src={International} alt="gca" className='service-image-size-1'/> 
                 </div>
-                <div className='service-display'>
+                <div className='service-display1'>
                 <span className='service-display-title'>International Payments Go Global, Instantly</span>
                 <p className='service-display-paragraphy'>No delays. No hidden fees. No stress.With GCA Pay, sending money across borders is 
                                     as easy as a local transfer. Whether you’re paying 
@@ -37,8 +37,8 @@ function ServiceDisplay() {
                                     the hassle of traditional banks.</p>
                                     <img src={Local} alt="gca" className='service-image-size-3'/> 
                 </div> 
-                <div className='service-display'>
-                <span className='service-display-title'>Local Transfers With Into Mobile Network Operators</span>
+                <div className='service-display1'>
+                <span className='service-display-title'>Local Transfers Mobile Network Operators</span>
                 <p className='service-display-paragraphy'>Pay bills, send money, or top up mobile wallets 
                                     with a few taps. We’ve partnered with top mobile 
                                     network operators (MNOs) to make sure your 

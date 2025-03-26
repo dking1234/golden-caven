@@ -23,6 +23,14 @@
     width: 100%;
 }
 
+.service-display1 {
+    display: flex;
+    flex-direction: column; /* Stack title, paragraph, and image vertically */
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+}
+
 .service-display-title {
     font-size: 24px;
     font-weight: 600;
@@ -68,7 +76,7 @@
 }
 
 .service-image-size {
-    max-width: 30srem;
+    max-width: 27rem;
 }
 
 .service-image-size-1 {
