@@ -56,7 +56,7 @@ function SignIn() {
           </button>
         </form>
         <p className="login-link">
-          Do not have an account? <a href="/login">Contact desk</a>
+          Do not have an account? <a href="/contact">Contact desk</a>
         </p>
       </div>
     </div>
